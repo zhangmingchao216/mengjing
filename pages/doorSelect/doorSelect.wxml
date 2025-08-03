@@ -1,0 +1,14 @@
+<!-- doorSelect.wxml -->
+<view class="container">
+  <view class="title">请选择门类型</view>
+  <view class="door-buttons">
+    <button class="door-btn" bindtap="selectFrontDoor">前门</button>
+    <button class="door-btn" bindtap="selectBackDoor">后门</button>
+    </view>
+
+  <view class="ip-setting">
+    <text class="label">ESP8266 IP地址:</text>
+    <input class="input" placeholder="请输入ESP8266的IP地址" bindinput="onIpInput" value="{{espIp}}" />
+    <button class="btn btn-primary" bindtap="startConfig">配网</button>
+  </view>
+</view>

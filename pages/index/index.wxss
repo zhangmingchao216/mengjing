@@ -1,0 +1,182 @@
+.video-container {
+  margin: 0 auto 30rpx;
+  padding: 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.video-container video {
+  width: 100%;
+  height: 400rpx;
+  background-color: #000;
+  border-radius: 10rpx;
+  display: block;
+  margin: 0 auto 20rpx;
+}
+
+.camera-container {
+  margin-bottom: 30rpx;
+  padding: 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+}
+
+.camera-title {
+  display: block;
+  margin-bottom: 10rpx;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.camera-view {
+  width: 100%;
+  height: 400rpx;
+  background-color: #000;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.camera-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.camera-controls .btn {
+  flex: 1;
+  margin-right: 10rpx;
+}
+
+.camera-controls .btn:last-child {
+  margin-right: 0;
+}
+
+.ip-setting {
+  margin-bottom: 30rpx;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10rpx;
+  color: var(--text-color-secondary);
+}
+
+.input {
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.state-display {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+  padding: 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+}
+
+.state-label {
+  margin-right: 20rpx;
+  color: var(--text-color-secondary);
+}
+
+.state-value {
+  font-weight: bold;
+}
+
+.state-open {
+  color: var(--success-color);
+}
+
+.state-close {
+  color: var(--danger-color);
+}
+
+.state-stop {
+  color: var(--warning-color);
+}
+
+.button-group {
+  margin-bottom: 30rpx;
+}
+
+.logs-container {
+  background-color: white;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+
+.logs-title {
+  display: block;
+  margin-bottom: 10rpx;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.logs-list {
+  height: 300rpx;
+}
+
+.log-item {
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #eeeeee;
+}
+
+.log-time {
+  color: var(--text-color-secondary);
+  font-size: 24rpx;
+}
+
+.log-content {
+  display: block;
+  margin-top: 5rpx;
+  color: var(--text-color);
+}
+
+
+
+/* 返回按钮样式 */
+.video-controls-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rpx;
+}
+
+.video-controls-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.video-controls-top .btn,
+.video-controls-bottom .btn {
+  margin: 0 10rpx;
+  flex: 0 1 auto;
+}
+
+.btn {
+    padding: 0 20rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 8rpx;
+    font-size: 28rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .back-button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+  }
+
+.back-button:active {
+    background-color: #0062cc;
+  }

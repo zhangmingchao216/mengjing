@@ -1,0 +1,48 @@
+/**
+ * 全局样式文件
+ */
+page {
+  --primary-color: #007aff;
+  --success-color: #07c160;
+  --warning-color: #ff976a;
+  --danger-color: #ee0a24;
+  --text-color: #333333;
+  --text-color-secondary: #666666;
+  --bg-color: #f5f5f5;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.container {
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-success {
+  background-color: var(--success-color);
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+}

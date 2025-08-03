@@ -1,0 +1,47 @@
+{
+  "setting": {
+    "urlCheck": true,
+    "requestDomain": ["https://open.ys7.com"],
+    "downloadDomain": ["https://open.ys7.com"],
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "uglifyFileName": false,
+    "enhance": true,
+    "packNpmRelationList": [],
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useCompilerPlugins": false,
+    "minifyWXML": true,
+    "compileWorklet": false,
+    "uploadWithSourceMap": true,
+    "packNpmManually": false,
+    "minifyWXSS": true,
+    "localPlugins": false,
+    "disableUseStrict": false,
+    "condition": false,
+    "swc": false,
+    "disableSWC": true
+  },
+  "compileType": "miniprogram",
+  "simulatorPluginLibVersion": {},
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "appid": "wx76d46a8550d2025a",
+  "editorSetting": {},
+  "plugins": {},
+
+  "libVersion": "3.9.0",
+  "extAppid": "",
+  "cloudfunctionTemplateRoot": "",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于获取本地网络状态"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<!-- login.wxml -->
+<view class="container">
+  <view class="logo-container">
+    <text class="logo-text">门禁系统</text>
+  </view>
+  <view class="form-container">
+    <view class="input-item">
+      <text class="label">密码：</text>
+      <input type="password" bindinput="inputPassword" placeholder="请输入密码" value="{{password}}" />
+    </view>
+    <text class="error-msg">{{errorMsg}}</text>
+    <button class="login-btn" bindtap="submitLogin">登录</button>
+  </view>
+</view>

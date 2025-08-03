@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/doorSelect/doorSelect",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#007aff",
+    "navigationBarTitleText": "门控开关系统",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {},
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于获取本地网络状态"
+    }
+  }
+}

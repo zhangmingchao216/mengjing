@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="video-container">
+
+    <video id="videoPlayer" src="{{videoUrl}}" controls="true" autoplay="false" object-fit="cover"></video>
+    <view class="video-controls-top">
+      <button class="btn btn-primary" bindtap="startPreview">开始预览</button>
+      <button class="btn btn-default back-button" bindtap="navigateBack">返回</button>
+    </view>
+    <view class="video-controls-bottom">
+      <button class="btn btn-default" bindtap="stopPreview">停止预览</button>
+      <button class="btn btn-info" bindtap="refreshVideoUrl">刷新URL</button>
+    </view>
+  </view>
+  <view class="state-display">
+    <text class="state-label">当前状态:</text>
+    <text class="state-value {{stateClass}}">{{stateText}}</text>
+  </view>
+
+  <view class="button-group">
+    <button class="btn btn-success" bindtap="openDoor">开门</button>
+    <button class="btn btn-danger" bindtap="closeDoor">关门</button>
+    <button class="btn btn-warning" bindtap="stopDoor">停止</button>
+  </view>
+
+  <view class="logs-container">
+    <text class="logs-title">操作日志</text>
+    <scroll-view scroll-y class="logs-list">
+      <view wx:for="{{logs}}" wx:key="index" class="log-item">
+        <text class="log-time">{{item.time}}</text>
+        <text class="log-content">{{item.content}}</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>
