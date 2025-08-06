@@ -5,10 +5,10 @@ Page({
     stateClass: 'state-stop',
     logs: [],
     // 萤石云配置参数 - 请根据您的实际设备信息修改以下参数
-    appKey: '15ed4fb161d443759146a82b1852c6ce',
-    appSecret: 'af6db7637cec411be966b930ab4c746d',
-    accessToken: 'at.3mzltw7e2m96tc0sdwbk1m57c93wyeir-77dvifej99-0qqk9ug-b1lumtftc',
-    deviceSerial: 'G75351381',  // 设备序列号 - 在这里更改
+    appKey: '',
+    appSecret: '',
+    accessToken: '',
+    deviceSerial: '',  // 设备序列号 - 在这里更改
     channelNo: 1,  // 通道号 - 在这里更改，通常为1
     protocol: 2,  // 1:RTSP, 2:RTMP, 3:HLS
     videoUrl: ''
@@ -30,11 +30,11 @@ Page({
     
     // 检查选择的门类型
     const selectedDoor = wx.getStorageSync('selectedDoor') || 'front'
-    let deviceSerial = 'G75351381'  // 默认前门摄像头序列号
+    let deviceSerial = ''  // 默认前门摄像头序列号
     
     if (selectedDoor === 'back') {
       // 后门，使用后门摄像头序列号
-      deviceSerial = wx.getStorageSync('backDoorSerial') || 'D94837588'
+      deviceSerial = wx.getStorageSync('backDoorSerial') || ''// 后门门摄像头序列号
       console.log('选择后门，摄像头序列号:', deviceSerial)
     } else {
       console.log('选择前门，摄像头序列号:', deviceSerial)
@@ -76,8 +76,8 @@ Page({
           encode: 'H264'
         })
         // 检查摄像头协议
-        console.log('摄像头', this.data.deviceSerial === 'D94837588' ? '后门' : '前门', '当前协议:', this.data.protocol === 2 ? 'RTMP' : this.data.protocol === 3 ? 'HLS' : 'RTSP')
-      },
+        console.log('摄像头', this.data.deviceSerial === '' ? '后门' : '前门', '当前协议:', this.data.protocol === 2 ? 'RTMP' : this.data.protocol === 3 ? 'HLS' : 'RTSP')
+      },// 后门门摄像头序列号
       success: (res) => {
         console.log('萤石云API响应:', res.data);
         if (res.data.code === '200') {
